@@ -1,0 +1,21 @@
+.Post {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+
+    margin-bottom: 60px;
+    /* height: 980px; */
+    width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+.placeholder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+*/

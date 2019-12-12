@@ -1,0 +1,17 @@
+.Post-user {
+	display: flex;
+	padding: 16px;
+	align-items: center; 
+}
+
+.Post-user-avatar img {
+	width: 40px;
+	height: 40px;
+}
+
+.Post-user-nickname {
+	margin-bottom: 4px;
+	margin-left: 12px;
+	font-family: 'Freight Sans', sans-serif;
+	font-weight: bold;
+}

@@ -1,0 +1,10 @@
+.Post-caption {
+	margin-bottom: 2px;
+	margin-left: 20px;
+  	text-align: left;
+}
+
+.Post-caption strong {
+	font-family: 'Freight Sans', sans-serif;
+	font-weight: bold;
+}

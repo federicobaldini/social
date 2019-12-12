@@ -1,0 +1,10 @@
+.Post-description {
+	margin-bottom: 10px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.Post-description strong {
+ 	font-family: 'Freight Sans', sans-serif;
+  	font-weight: bold;
+}

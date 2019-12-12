@@ -1,0 +1,17 @@
+[
+  {
+    "userID": "1",
+    "nickname": "jason",
+    "message": "bellissima foto!"
+  },
+  {
+    "userID": "2",
+    "nickname": "irene",
+    "message": "Torna presto, sono in ansia"
+  },
+  {
+    "userID": "3",
+    "nickname": "riccardo",
+    "message": "ma dove sei?"
+  }
+]
