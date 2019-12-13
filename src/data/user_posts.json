@@ -327,7 +327,7 @@
       "photo": "/user2-1.png",
       "nickname": "nicola"
     },
-    "image" : "/jojo.jpg",
+    "image" : "/dog.jpg",
     "description" : "JOOOOSKEEEEEE!!",
     "like": false,
     "likes": [
@@ -418,12 +418,17 @@
       {
         "userID": "7",
         "nickname": "alex",
-        "message": "te l'avevo detto io!"
+        "message": "bello lui!"
       },
       {
         "userID": "8",
         "nickname": "filippo",
-        "message": "grande Josuke"
+        "message": "grande atmosfera"
+      },
+      {
+        "userID": "9",
+        "nickname": "giulia",
+        "message": "che noia"
       }
     ]
   }
