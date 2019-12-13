@@ -7,7 +7,7 @@ import LazyLoad from 'react-lazyload';
 
 const user = {
     photo: '/user2.png',
-    nickname: 'federico.bal',
+    nickname: 'federico',
 }
 
 class App extends Component {
