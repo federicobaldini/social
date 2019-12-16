@@ -1,5 +1,5 @@
 import React from "react";
-import './mainPost.css';
+import './singlePost.css';
 import HeaderPost from './headerPost/headerPost';
 import PhotoPost from './photoPost/photoPost';
 import PhotoInteractions from './photoInteractions/photoInteractions';
@@ -12,7 +12,7 @@ import LazyLoad from 'react-lazyload';
 
 
 
-class MainPost extends React.Component{
+class SinglePost extends React.Component{
 
     constructor(props) {
     super(props);
@@ -79,4 +79,4 @@ class MainPost extends React.Component{
         );
     }   
 }
-export default MainPost;
+export default SinglePost;

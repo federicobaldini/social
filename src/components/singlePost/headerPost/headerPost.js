@@ -15,7 +15,7 @@ class HeaderPost extends React.Component{
                 <div className="Post-user">
                     <div className="Post-user-avatar">
                         <img
-                            src={require("../../../../images" + this.props.user.photo)}
+                            src={require("../../../images" + this.props.user.photo)}
                             alt="site icon"/>
                     </div>
                     <div className="Post-user-nickname">

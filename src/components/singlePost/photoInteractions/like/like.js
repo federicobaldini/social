@@ -21,12 +21,12 @@ class Like extends React.Component{
 
 		if (this.props.like === false) {
 			likeImage=(<img
-				src={require("../../../../../images/not-like.png")}
+				src={require("../../../../images/not-like.png")}
 				onClick={this.handleClick}
 				alt="not like"/>);
 		} else {
 			likeImage=(<img
-				src={require("../../../../../images/like.png")}
+				src={require("../../../../images/like.png")}
 				onClick={this.handleClick}
 				alt="like"/>);
 		}

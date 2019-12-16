@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header/header';
-import MainPost from './components/post/mainPost/mainPost';
+import SinglePost from './components/singlePost/singlePost';
 import userPosts from './data/user_posts.json'
 import LazyLoad from 'react-lazyload';
 
@@ -83,7 +83,7 @@ class App extends Component {
         let rows = [];
         
         this.state.posts.forEach(element => {
-            rows.push(<MainPost
+            rows.push(<SinglePost
                 key={this.state.posts[index].postID}
                 localIndex={index}
                 post={this.state.posts[index]}

@@ -10,7 +10,7 @@ class PhotoPost extends React.Component{
 	render() {
 		return (
 			<div className="Post-image">
-				<img src={require("../../../../images" + this.props.photo)} alt="post"/>
+				<img src={require("../../../images" + this.props.photo)} alt="post"/>
 			</div>
 		);
 	}   

@@ -21,7 +21,7 @@ class LikeCounter extends React.Component{
 
 				<span className="Post-last-like">
 					<img
-						src={require("../../../../images" + listLikesByPeople[numberOfLikes - 1].photo)}
+						src={require("../../../images" + listLikesByPeople[numberOfLikes - 1].photo)}
 						align="middle"
 						alt="icon"/>
 				</span>

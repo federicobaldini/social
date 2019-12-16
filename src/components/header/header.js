@@ -8,7 +8,7 @@ class Header extends React.Component{
                 <div className="Nav-menus">
                     <a className="Nav-brand-logo" href="/"/>
                     <span className="Nav-brand-name">
-                        Social Photo Interface
+                        SPIX (Social Photo Interface X)
                     </span>
                 </div>
             </nav>

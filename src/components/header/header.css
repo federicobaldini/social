@@ -26,11 +26,12 @@
     background-size: 405px 379px;
     background-repeat: no-repeat;
     height: 35px;
-    width: 68px; /* 176 */
+    width: 50px; /* 176 */
     text-indent: -1000%
 }
 
 .Nav-brand-name {
-    font-size: 22px;
+    font-size: 23px;
     padding: 0;
+    display: block;
 }
