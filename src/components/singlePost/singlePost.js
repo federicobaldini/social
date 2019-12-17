@@ -9,9 +9,6 @@ import Comments from './comments/comments';
 import AddComment from './addComment/addComment';
 import LazyLoad from 'react-lazyload';
 
-
-
-
 class SinglePost extends React.Component{
 
     constructor(props) {
@@ -24,8 +21,8 @@ class SinglePost extends React.Component{
         this.showMoreCommentsHandler = this.showMoreCommentsHandler.bind(this);
     }
 
-    showMoreCommentsHandler(vediamo) {
-        this.setState({showMore: vediamo});
+    showMoreCommentsHandler(show) {
+        this.setState({showMore: show});
     }
 
 	shouldComponentUpdate(nextProps, nextState) {
@@ -59,7 +56,6 @@ class SinglePost extends React.Component{
                     {/* </LazyLoad> */}
                     <PhotoInteractions
                         like={this.props.post.like}
-                        likes={this.props.post.likes}
                         changeLike={this.props.changeLikeHandler}
                         localIndex={this.props.localIndex}/>
                     <LikeCounter likes={this.props.post.likes}/>
@@ -72,7 +68,7 @@ class SinglePost extends React.Component{
                         commentsState={this.state}/>
                     <AddComment
                         addComment={this.props.addCommentHandler}
-                        comments={this.props.post.comments}
+                        commentsNumber={this.props.post.comments.length}
                         localIndex={this.props.localIndex}/>
                 </article>
             /* </LazyLoad> */

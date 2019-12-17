@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/header/header';
 import SinglePost from './components/singlePost/singlePost';
 import userPosts from './data/user_posts.json'
-import LazyLoad from 'react-lazyload';
 
 const user = {
     photo: '/user2.png',
@@ -21,13 +20,13 @@ class App extends Component {
         this.changeLikeHandler = this.changeLikeHandler.bind(this);
     }
 
-    addCommentHandler(oldComments, newID, newMessage, localIndex) {
+    addCommentHandler(newID, newMessage, localIndex) {
         let newElement = {
             userID: newID,
             nickname: user.nickname,
             message: newMessage,
         }
-        let newComments = [...oldComments];
+        let newComments = [...this.state.posts[localIndex].comments];
         newComments.push(newElement);
 
         // 1. Make a shallow copy of the items
@@ -47,10 +46,10 @@ class App extends Component {
         this.setState({posts});
     }
 
-    changeLikeHandler(oldLikes, localIndex) {
+    changeLikeHandler(localIndex) {
         let index;
 
-        let newLikes = [...oldLikes];
+        let newLikes = [...this.state.posts[localIndex].likes];
 
         // 1. Make a shallow copy of the items
         let posts = [...this.state.posts];

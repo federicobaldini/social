@@ -23,8 +23,7 @@ class AddComment extends React.Component {
         event.preventDefault();
         if (this.state.value !== '') {
             this.props.addComment(
-                this.props.comments,
-                this.generateKey(this.props.comments.length),
+                this.generateKey(this.props.commentsNumber),
                 this.state.value,
                 this.props.localIndex);
             this.setState({value: ''});

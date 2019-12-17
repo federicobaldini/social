@@ -17,7 +17,6 @@ class PhotoInteractions extends React.Component{
 			<div className="Post-interactions">
 				<Like
 					like={this.props.like}
-					likes={this.props.likes}
 					changeLike={this.props.changeLike}
 					localIndex={this.props.localIndex}/>
 			</div>

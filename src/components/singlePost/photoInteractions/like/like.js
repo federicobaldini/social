@@ -12,7 +12,7 @@ class Like extends React.Component{
 
 
 	handleClick(event) {
-		this.props.changeLike(this.props.likes, this.props.localIndex);
+		this.props.changeLike(this.props.localIndex);
 	}
 
 
