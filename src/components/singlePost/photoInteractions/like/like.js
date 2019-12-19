@@ -5,16 +5,12 @@ class Like extends React.Component{
 
 	constructor(props) {
     	super(props);
-   	 	this.state = {value: ''};
-
     	this.handleClick = this.handleClick.bind(this);
   	}
-
 
 	handleClick(event) {
 		this.props.changeLike(this.props.localIndex);
 	}
-
 
 	render(){
 		let likeImage;

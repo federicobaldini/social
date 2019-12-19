@@ -12,7 +12,6 @@ class PhotoInteractions extends React.Component{
   	}
   	
 	render() {
-
 		return (
 			<div className="Post-interactions">
 				<Like

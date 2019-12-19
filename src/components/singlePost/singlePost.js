@@ -34,7 +34,6 @@ class SinglePost extends React.Component{
   render() {
     // offset immagini {-500} solo a scopo dimostrativo, settare su 100 o 200 (oppure 500 * 3 per caricare le immagini successive)
     // offset post {-600} solo a scopo dimostrativo, settare su 100 o 200 (oppure 800 * 3 per caricare i post successive)
-
         return (
             // ricorda di modificare anche il relativo file CSS per il placeholder
             /* <LazyLoad
