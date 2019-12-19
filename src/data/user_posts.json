@@ -9,7 +9,7 @@
     "description" : "Foresta canadese, mese di Gennaio, stupenda!",
     "like": false,
     "numberOfLikes": 113,
-    "lastLikes": [
+    "likes": [
       {
         "photo": "/user2.png",
         "nickname": "Giovanni"
@@ -120,7 +120,7 @@
     "description" : "Nuova ricetta, spero che la dieta non vada a monte..",
     "like": false,
     "numberOfLikes": 3653,
-    "lastLikes": [
+    "likes": [
       {
         "photo": "/user2.png",
         "nickname": "Giovanni"
@@ -223,7 +223,7 @@
     "description" : "Vitigno di Bologna. Regala emozioni anche dopo una dura giornata di lavoro.",
     "like": false,
     "numberOfLikes": 6,
-    "lastLikes": [
+    "likes": [
       {
         "photo": "/user2.png",
         "nickname": "Giovanni"
@@ -334,7 +334,7 @@
     "description" : "Il migliore amico dell'uomo non ti abbandona mai",
     "like": false,
     "numberOfLikes": 678,
-    "lastLikes": [
+    "likes": [
       {
         "photo": "/user2.png",
         "nickname": "Giovanni"

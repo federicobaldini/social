@@ -58,7 +58,7 @@ class SinglePost extends React.Component{
                         changeLike={this.props.changeLikeHandler}
                         localIndex={this.props.localIndex}/>
                     <LikeCounter
-                        lastLikes={this.props.post.lastLikes}
+                        likes={this.props.post.likes}
                         numberOfLikes={this.props.post.numberOfLikes}/>
                     <PhotoDescription
                         user={this.props.post.postUser}

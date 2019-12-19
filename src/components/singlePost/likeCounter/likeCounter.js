@@ -10,8 +10,8 @@ class LikeCounter extends React.Component{
   	}
 
 	render() {
-		const listLikesByPeople = this.props.lastLikes;
-		const lastLike = this.props.lastLikes.length;
+		const lastLikes = this.props.likes;
+		const lastLike = this.props.likes.length;
 		const numberOfLikes = this.props.numberOfLikes;
 
 		return (
@@ -19,10 +19,10 @@ class LikeCounter extends React.Component{
 				<span>
 					Piace a
 				</span>
-				
+
 				<span className="Post-last-like">
 					<img
-						src={require("../../../images" + listLikesByPeople[lastLike - 1].photo)}
+						src={require("../../../images" + lastLikes[lastLike - 1].photo)}
 						align="middle"
 						alt="icon"/>
 				</span>

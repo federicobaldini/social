@@ -49,7 +49,7 @@ class App extends Component {
     changeLikeHandler(localIndex) {
         let index;
 
-        let newLike = [...this.state.posts[localIndex].lastLikes];
+        let newLike = [...this.state.posts[localIndex].likes];
         let newLikeNumber = this.state.posts[localIndex].numberOfLikes;
 
         // 1. Make a shallow copy of the items
@@ -71,7 +71,7 @@ class App extends Component {
         }
 
         post.numberOfLikes = newLikeNumber;
-        post.lastLikes = newLike;
+        post.likes = newLike;
 
         // 4. Put it back into our array. N.B. we *are* mutating
         // the array here, but that's why we made a copy first
