@@ -49,7 +49,8 @@ class App extends Component {
     changeLikeHandler(localIndex) {
         let index;
 
-        let newLikes = [...this.state.posts[localIndex].likes];
+        let newLike = [...this.state.posts[localIndex].lastLikes];
+        let newLikeNumber = this.state.posts[localIndex].numberOfLikes;
 
         // 1. Make a shallow copy of the items
         let posts = [...this.state.posts];
@@ -60,14 +61,17 @@ class App extends Component {
         // 3. Replace the property you're intested in
         if (post.like === false) {
             post.like = true;
-            newLikes.push(user);
+            newLike.push(user);
+            newLikeNumber++;
         } else {
             post.like = false;
-            index = newLikes.indexOf(user);
-            newLikes.splice(index, 1);
+            index = newLike.indexOf(user);
+            newLike.splice(index, 1);
+            newLikeNumber--;
         }
 
-        post.likes = newLikes;
+        post.numberOfLikes = newLikeNumber;
+        post.lastLikes = newLike;
 
         // 4. Put it back into our array. N.B. we *are* mutating
         // the array here, but that's why we made a copy first
