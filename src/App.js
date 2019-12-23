@@ -20,9 +20,8 @@ class App extends Component {
         this.changeLikeHandler = this.changeLikeHandler.bind(this);
     }
 
-    addCommentHandler(newID, newMessage, localIndex) {
+    addCommentHandler(newMessage, localIndex) {
         let newElement = {
-            userID: newID,
             nickname: user.nickname,
             message: newMessage,
         }

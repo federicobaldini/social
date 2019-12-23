@@ -11,10 +11,6 @@ class AddComment extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    generateKey(lastKey) {
-        return ++lastKey;
-    }
-
     handleChange(event) {
         this.setState({value: event.target.value});
     }
@@ -23,7 +19,6 @@ class AddComment extends React.Component {
         event.preventDefault();
         if (this.state.value !== '') {
             this.props.addComment(
-                this.generateKey(this.props.commentsNumber),
                 this.state.value,
                 this.props.localIndex);
             this.setState({value: ''});
