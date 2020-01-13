@@ -36,21 +36,21 @@ class SinglePost extends React.Component{
     // offset post {-600} solo a scopo dimostrativo, settare su 100 o 200 (oppure 800 * 3 per caricare i post successive)
         return (
             // ricorda di modificare anche il relativo file CSS per il placeholder
-            /* <LazyLoad
+             /* <LazyLoad
                     height={800}
                     offset={-600}
                     once={true}
                     placeholder={<img
-                        src={require("../../../images/loading.gif")}
+                        src={require("../../images/loading.gif")}
                         alt="..." className="placeholder"/>}> */
                 <article className="Post" ref="Post">
                     <HeaderPost user={this.props.post.postUser}/>
                     {/* <LazyLoad
                             height={600}
-                            offset={-500}
+                            offset={-300}
                             once={true}
                             placeholder={<img
-                                src={require("../../../images/loading.gif")}/>}> */}
+                                src={require("../../images/loading.gif")}/>}> */}
                         <PhotoPost photo={this.props.post.image}/>
                     {/* </LazyLoad> */}
                     <PhotoInteractions
@@ -69,7 +69,6 @@ class SinglePost extends React.Component{
                         commentsState={this.state}/>
                     <AddComment
                         addComment={this.props.addCommentHandler}
-                        commentsNumber={this.props.post.comments.length}
                         localIndex={this.props.localIndex}/>
                 </article>
             /* </LazyLoad> */

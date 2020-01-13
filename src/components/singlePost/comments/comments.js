@@ -16,7 +16,7 @@ class Comments extends React.Component{
 
 	shouldComponentUpdate(nextProps, nextState) {
   		if (nextProps.comments === this.props.comments
-  			&& nextProps.commentsState === this.props.commentsState)
+  				&& nextProps.commentsState === this.props.commentsState)
   			return false;
   		return true;
   	}

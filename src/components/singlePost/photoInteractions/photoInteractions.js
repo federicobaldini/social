@@ -5,8 +5,7 @@ import Like from './like/like';
 class PhotoInteractions extends React.Component{
 
 	shouldComponentUpdate(nextProps, nextState) {
-  		if (nextProps.like === this.props.like
-  			&& nextProps.likes === this.props.likes)
+  		if (nextProps.like === this.props.like)
   			return false;
   		return true;
   	}

@@ -4,7 +4,9 @@ import './photoPost.css';
 class PhotoPost extends React.Component{
 	
 	shouldComponentUpdate(nextProps, nextState) {
+		if (nextProps.photo === this.props.photo)
     		return false;
+    	return true
   	}
 
 	render() {

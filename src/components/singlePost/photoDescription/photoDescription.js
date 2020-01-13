@@ -4,6 +4,8 @@ import './photoDescription.css';
 class PhotoDescription extends React.Component{
 
 	shouldComponentUpdate(nextProps, nextState) {
+		if (nextProps.description === this.props.description)
+ 			return false;
    		return false;
    	}
 

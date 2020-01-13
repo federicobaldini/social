@@ -25,10 +25,10 @@ class AddComment extends React.Component {
         }
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
+   shouldComponentUpdate(nextProps, nextState) {
         if (nextState.value !== this.state.value) {
             return true;
-        } else if (nextProps.post === this.props.post) {
+        } else if (nextProps.localIndex === this.props.localIndex) {
             return false;
         }
         return true;
