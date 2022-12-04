@@ -1,4 +1,4 @@
-It's a simple web application made in the middle of 2019, using React. The UI/UX is inspired by the desktop version of Instagram. The purpose of this project was make a proof of concept of the potential of the ReactJS library.
+It is a simple web application built in mid-2019 using React. The UI/UX is inspired by the desktop version of Instagram. The purpose of this project was to make a proof of concept of the potential of the ReactJS library.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
